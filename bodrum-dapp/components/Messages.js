@@ -31,9 +31,9 @@ function Messages () {
     </div>
       <div>
           
-          {data.map((message) => (
+          {data.map((message,i) => (
             <div className="space-y-10 p-4">
-            <Message key={message.id} message={message}/>
+            <Message key={i} message={message}/>
             </div>
           )
 
