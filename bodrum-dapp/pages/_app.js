@@ -1,10 +1,12 @@
 import '../styles/globals.css'
 import { MoralisProvider } from "react-moralis";
 
-function MyApp({ Component, pageProps}) {
 
+function MyApp({ Component, pageProps}) {
+const serverUrlt = process.env['serverUrl']
+const appId = process.env['APPID']
   return (
-    <MoralisProvider appId={process.env.appId} serverUrl={process.env.serverUrl}>
+    <MoralisProvider appId={"8tBntj4KUT0ATbZXZ7cQ1mBTn6imRqT3DuK3y3Ae"} serverUrl={"https://cbyty9li9um6.usemoralis.com:2053/server"}>
     <Component {...pageProps} />
     </MoralisProvider>)
 }
