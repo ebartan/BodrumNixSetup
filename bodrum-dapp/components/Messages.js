@@ -33,7 +33,7 @@ function Messages () {
           
           {data.map((message) => (
             <div className="space-y-10 p-4">
-            <Message key={message.id} message={message}/>
+            <Message message={message}/>
             </div>
           )
 
